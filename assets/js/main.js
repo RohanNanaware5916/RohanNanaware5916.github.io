@@ -1,34 +1,45 @@
-// Quick-edit projects
+// Projects render into #projects-wrapper.
+// Add your projects below. If empty, a friendly placeholder will show.
+
 const projects = [
-  {
-    title: "Advanced driver assistance system (ADAS)",
-    tech: "C++, Python, OpenCV, Nvidia Jetson Nano",
-    img: "assets/img/vid.gif",   // add your GIF/image in assets/img
-    bullets: [
-      "Built multicore embedded system on Jetson Nano 2GB",
-      "Lane, traffic light, stop‑sign, and pedestrian detection",
-      "Implemented AMP/SMP with C++ & OpenCV — ~40 FPS",
-      "HOG + SVM, ROI, edge detection; F‑measure: 0.96"
-    ],
-    repo: "https://github.com/Manavi-ghorpade/ADAS-Final-project-/tree/master"
-  },
-  {
-    title: "Food pantry management application",
-    tech: "React, TypeScript, PostgreSQL, Docker, CI/CD, Jest",
-    img: "assets/img/food.gif",
-    bullets: [
-      "Migrated NodeJS→React and MongoDB→PostgreSQL with Docker",
-      "Per‑PR CI with coverage; badges & regression safety",
-      "Comprehensive test plans cut bugs by ~40%"
-    ],
-    repo: "https://github.com/ChicoState/PantryNode"
-  }
-  // add more following the same shape…
+  // {
+  //   title: "SFMC Preference & Unsubscribe Centre",
+  //   tech: "Salesforce Marketing Cloud, AMPscript, SQL, CloudPages",
+  //   img: "assets/img/preference-center.png",
+  //   bullets: [
+  //     "Built GDPR/CAN-SPAM compliant preference management",
+  //     "Automated data sync + audience segmentation",
+  //     "Reduced manual opt-outs and improved deliverability"
+  //   ],
+  //   repo: "https://github.com/yourname/yourrepo"
+  // },
+  // {
+  //   title: "Marketing Analytics Dashboard",
+  //   tech: "SQL, Tableau/Power BI, SFMC Data Views",
+  //   img: "assets/img/dashboard.png",
+  //   bullets: [
+  //     "Unified CRM + campaign data for KPI visibility",
+  //     "Automated weekly refresh and stakeholder views"
+  //   ],
+  //   repo: "https://github.com/yourname/yourrepo"
+  // }
 ];
 
 function renderProjects() {
   const wrapper = document.getElementById("projects-wrapper");
-  if(!wrapper) return;
+  if (!wrapper) return;
+
+  if (!projects.length) {
+    const empty = document.createElement("div");
+    empty.className = "col-12";
+    empty.innerHTML = `
+      <div class="alert alert-light border">
+        <strong>No projects added yet.</strong> Open <code>assets/js/main.js</code> and add objects to the <code>projects</code> array.
+      </div>`;
+    wrapper.appendChild(empty);
+    return;
+  }
+
   projects.forEach((p, i) => {
     const col = document.createElement("div");
     col.className = "col-12";
@@ -47,8 +58,8 @@ function renderProjects() {
                 <img src="${p.img}" alt="${p.title}" class="img-fluid" style="max-width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
               </div>
               <div class="col-md-9">
-                <ul>${p.bullets.map(b => `<li>${b}</li>`).join("")}</ul>
-                <a href="${p.repo}" target="_blank" class="link-info">GitHub repository</a>
+                <ul>${(p.bullets||[]).map(b => `<li>${b}</li>`).join("")}</ul>
+                ${p.repo ? `<a href="${p.repo}" target="_blank" class="link-info">Repository / Demo</a>` : ""}
               </div>
             </div>
           </div>
@@ -57,5 +68,5 @@ function renderProjects() {
     wrapper.appendChild(col);
   });
 }
-document.addEventListener("DOMContentLoaded", renderProjects);
 
+document.addEventListener("DOMContentLoaded", renderProjects);
