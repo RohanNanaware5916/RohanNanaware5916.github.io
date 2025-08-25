@@ -39,7 +39,7 @@
   </header>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero.jpg); background-size: cover;">
+  <section id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero.JPG); background-size: cover;">
     <div class="overlay-itro"></div>
     <div class="hero-content d-table w-100" style="min-height: 100vh;">
       <div class="d-table-cell align-middle">
