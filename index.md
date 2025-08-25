@@ -1,1 +1,197 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rohan Arun Nanaware — Portfolio</title>
+  <meta name="description" content="Salesforce Marketing Cloud Specialist | Data Analyst | Driving Personalisation & Insights">
+  <meta name="keywords" content="Rohan Nanaware, Salesforce Developer, Data Analyst, Salesforce Marketing Cloud, Data Analytics, AMPscript, SQL">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Vendor CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo m-0"><a href="index.html">Rohan Arun Nanaware</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Projects</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero.JPG); background-size: cover;">
+    <div class="overlay-itro"></div>
+    <div class="hero-content d-table w-100" style="min-height: 100vh;">
+      <div class="d-table-cell align-middle">
+        <div class="container text-center">
+          <h1 class="hero-title mb-3 animate__animated animate__fadeInDown" style="font-size: clamp(24px, 5vw, 46px); color: #FFFFFF">
+            Optimising Customer Engagement and Business Performance Through Data & CRM Innovation
+          </h1>
+          <p class="hero-description animate__animated animate__fadeInUp" style="color: #FFFFFF">
+            Experienced in building scalable CRM architectures, advanced data models, and automation workflows that enhance campaign efficiency and compliance.
+          </p>
+          <p class="pt-3 animate__animated animate__fadeInUp">
+            <a class="btn btn-primary px-4" href="#about" role="button">Learn More</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full p-4 rounded-3 bg-white">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="row g-3">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/profile.jpg" class="img-fluid rounded shadow-sm" alt="Rohan Nanaware headshot">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info small">
+                        <p><span class="title-s fw-semibold">Name: </span> <span>Rohan Arun Nanaware</span></p>
+                        <p><span class="title-s fw-semibold">Profile: </span> <span>Salesforce Developer / Data Analyst</span></p>
+                        <p><span class="title-s fw-semibold">Email: </span> <span><a href="mailto:rohanananaware@gmail.com">rohanananaware@gmail.com</a></span></p>
+                        <p><span class="title-s fw-semibold">Phone: </span> <span><a href="tel:+14155686705">(415) 568 6705</a></span></p>
+                        <p><span class="title-s fw-semibold">Degree: </span> <span>M.S. in Business Analytics</span></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skill-mf mt-3">
+                    <p class="title-s h6">Skills</p>
+                    <div class="skills-badges">
+                      <span class="skill-badge">Salesforce Marketing Cloud</span>
+                      <span class="skill-badge">SQL / SOQL</span>
+                      <span class="skill-badge">AMPscript</span>
+                      <span class="skill-badge">HTML</span>
+                      <span class="skill-badge">CSS</span>
+                      <span class="skill-badge">JavaScript</span>
+                      <span class="skill-badge">Data Modelling</span>
+                      <span class="skill-badge">Data Warehousing</span>
+                      <span class="skill-badge">ETL / ELT</span>
+                      <span class="skill-badge">Data Analytics & Visualisation</span>
+                      <span class="skill-badge">Salesforce API (REST / SOAP)</span>
+                      <span class="skill-badge">Java</span>
+                      <span class="skill-badge">Spring Boot</span>
+                      <span class="skill-badge">CRM Strategy</span>
+                      <span class="skill-badge">Campaign Management</span>
+                      <span class="skill-badge">A/B Testing</span>
+                      <span class="skill-badge">Data Compliance & Governance</span>
+                      <span class="skill-badge">Agile Delivery</span>
+                      <span class="skill-badge">Git</span>
+                      <span class="skill-badge">JIRA</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="about-me">
+                    <div class="title-box-2">
+                      <h5 class="title-left">About me</h5>
+                    </div>
+                    <p class="lead">
+                      I am a Salesforce Marketing Cloud and Data Analytics professional with 4+ years of experience delivering scalable CRM, campaign automation, and data-driven solutions. Skilled in SQL, AMPscript, and Salesforce APIs, I specialise in transforming complex data into actionable insights that optimise customer engagement and business performance.
+                    </p>
+                    <p class="lead">
+                      With a background in business analytics and computer engineering, I bridge the gap between marketing and technology by building data models, automation workflows, and compliance-ready solutions that drive measurable impact.
+                    </p>
+                  </div>
+                </div>
+              </div> <!-- row -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Projects Section ======= -->
+    <section id="services" class="services-mf route py-5">
+      <div class="container">
+        <h2 class="title-left">Projects</h2>
+        <div class="row gy-4" id="projects-wrapper">
+          <!-- Cards injected from assets/js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="footer-paralax bg-image sect-mt4 route py-5" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div class="box-shadow-full p-4 bg-white rounded-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-2">
+                      <h5 class="title-left">Get in Touch</h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        I’d love to hear from you! If you have questions or feedback about my work, please reach out.
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> San Francisco, CA</li>
+                        <li><span class="bi bi-phone"></span> 4155686705</li>
+                        <li><span class="bi bi-envelope"></span> <a href="mailto:rohanananaware@gmail.com">rohanananaware@gmail.com</a></li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/rohan-nanaware"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li class="list-inline-item"><a target="_blank" href="https://github.com/RohanNanaware5916"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                        <!-- Instagram omitted -->
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- row -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Site JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
