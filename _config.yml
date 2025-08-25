@@ -1,0 +1,7 @@
+title: Rohan Nanaware
+description: Portfolio • Analytics • Marketing Technology
+theme: minima
+# Show "About" and "Projects" in the top navigation
+header_pages:
+  - about.md
+  - projects.md
