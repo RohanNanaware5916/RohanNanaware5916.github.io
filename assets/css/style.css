@@ -1,4 +1,3 @@
-
 :root{ --primary:#0d6efd; }
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
@@ -15,6 +14,14 @@ body{
 .ico-circle{ display:inline-flex; width:38px; height:38px; align-items:center; justify-content:center; border-radius:50%; background:#f0f2f6; }
 .footer-paralax{ background-size: cover; background-position: center; position: relative; }
 .footer-paralax .overlay-mf{ position:absolute; inset:0; background: rgba(13,110,253,.08);}
-.progress{ height:8px; }
 .title-left{ font-weight:700; }
+
+.skills-badges{
+  display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.5rem;
+}
+.skill-badge{
+  display:inline-block; padding:.35rem .6rem; border-radius:999px;
+  background:#eef2ff; color:#1f2a44; border:1px solid #dde3ff; font-size:.9rem;
+}
+
 #projects-wrapper .card{ border:1px solid #eef0f5; }
