@@ -2,27 +2,65 @@
 // Add your projects below. If empty, a friendly placeholder will show.
 
 const projects = [
-  // {
-  //   title: "SFMC Preference & Unsubscribe Centre",
-  //   tech: "Salesforce Marketing Cloud, AMPscript, SQL, CloudPages",
-  //   img: "assets/img/preference-center.png",
-  //   bullets: [
-  //     "Built GDPR/CAN-SPAM compliant preference management",
-  //     "Automated data sync + audience segmentation",
-  //     "Reduced manual opt-outs and improved deliverability"
-  //   ],
-  //   repo: "https://github.com/yourname/yourrepo"
-  // },
-  // {
-  //   title: "Marketing Analytics Dashboard",
-  //   tech: "SQL, Tableau/Power BI, SFMC Data Views",
-  //   img: "assets/img/dashboard.png",
-  //   bullets: [
-  //     "Unified CRM + campaign data for KPI visibility",
-  //     "Automated weekly refresh and stakeholder views"
-  //   ],
-  //   repo: "https://github.com/yourname/yourrepo"
-  // }
+   {
+     title: "SFMC Preference & Unsubscribe Centre",
+     tech: "Salesforce Marketing Cloud, AMPscript, SQL, CloudPages",
+     img: "assets/img/preference-center.png",
+     bullets: [
+       "Built GDPR/CAN-SPAM compliant preference management",
+       "Automated data sync + audience segmentation",
+       "Reduced manual opt-outs and improved deliverability"
+     ],
+     repo: "https://github.com/yourname/yourrepo"
+   },
+   {
+     title: "Marketing Analytics Dashboard",
+     tech: "SQL, Tableau/Power BI, SFMC Data Views",
+     img: "assets/img/dashboard.png",
+     bullets: [
+       "Unified CRM + campaign data for KPI visibility",
+       "Automated weekly refresh and stakeholder views"
+     ],
+     repo: "https://github.com/yourname/yourrepo"
+   }
+  
+  {
+     title: "FoodMaster",
+     tech: "WordPress, HTML, CSS, JavaScript, Forms, API",
+     img: "assets/img/preference-center.png",
+     bullets: [
+       "Food Master is a static website designed in HTML and CSS which is used for food delivery system for a hotels in Pune in its local areas. Where we also configured domain and hosting."
+     ],
+     repo: "https://github.com/yourname/yourrepo"
+   },
+   {
+     title: "Flight Booking Webapp",
+     tech: "Java, Microservices, WebApps, Hibernate, Spring, SpringBoot, HTML, JavaScript, CSS, XML, JSON",
+     img: "assets/img/dashboard.png",
+     bullets: [
+       "Flight booking web app is designed for customers for booking tickets online using concept of web services and micro services to provide best results suitable for the search inputs given by them and allowing them to see the booking details, flight details."
+     ],
+     repo: "https://github.com/yourname/yourrepo"
+   }
+  
+  {
+     title: "Location Web App",
+     tech: "Java, Microservices, WebApps, Hibernate, Spring, SpringBoot, HTML, JavaScript, CSS, XML, JSON",
+     img: "assets/img/preference-center.png",
+     bullets: [
+       "Location web project is developed with using spring mvc architecture in which there are different modules to get required data from users and store it into database and with using web services the data can be exposed and consumed in different app with using REST API."
+     ],
+     repo: "https://github.com/yourname/yourrepo"
+   },
+   {
+     title: "Master TechSoft",
+     tech: "WordPress, HTML, CSS, JavaScript, Forms, API",
+     img: "assets/img/dashboard.png",
+     bullets: [
+       "Master Techsoft is a WordPress based website which was developed as a freelancer for the respective client using various templates and theme."
+     ],
+     repo: "https://github.com/yourname/yourrepo"
+   }
 ];
 
 function renderProjects() {
@@ -69,4 +107,4 @@ function renderProjects() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", renderProjects);
+document.addEventListener("DOMContentLoaded", renderProjects); 
