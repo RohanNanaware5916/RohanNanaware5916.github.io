@@ -11,7 +11,7 @@ const projects = [
       "Automated data sync + audience segmentation",
       "Reduced manual opt-outs and improved deliverability"
     ],
-    repo: "https://github.com/yourname/yourrepo"
+ //   repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Marketing Analytics Dashboard",
@@ -21,7 +21,7 @@ const projects = [
       "Unified CRM + campaign data for KPI visibility",
       "Automated weekly refresh and stakeholder views"
     ],
-    repo: "https://github.com/yourname/yourrepo"
+ //   repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "FoodMaster",
@@ -31,7 +31,7 @@ const projects = [
       "Built a static food delivery website for local hotels in Pune",
       "Configured domain and hosting for deployment"
     ],
-    repo: "https://github.com/yourname/yourrepo"
+//    repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Flight Booking Webapp",
@@ -41,7 +41,7 @@ const projects = [
       "Designed online flight booking system using microservices",
       "Enabled ticket booking, flight search, and booking details"
     ],
-    repo: "https://github.com/yourname/yourrepo"
+//    repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Location Web App",
@@ -51,7 +51,7 @@ const projects = [
       "Developed with Spring MVC architecture for data storage",
       "Exposed and consumed data using REST APIs"
     ],
-    repo: "https://github.com/yourname/yourrepo"
+//    repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Master TechSoft",
@@ -61,7 +61,7 @@ const projects = [
       "Developed a WordPress site for a client using themes and templates",
       "Integrated custom forms and API features"
     ],
-    repo: "https://github.com/yourname/yourrepo"
+//    repo: "https://github.com/yourname/yourrepo"
   }
 ];
 
