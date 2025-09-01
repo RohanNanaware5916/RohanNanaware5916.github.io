@@ -5,7 +5,7 @@ const projects = [
   {
     title: "SFMC Preference & Unsubscribe Centre",
     tech: "Salesforce Marketing Cloud, AMPscript, SQL, CloudPages",
-    img: "assets/img/mastertech.JPG",
+    img: "assets/img/ggu.png",
     bullets: [
       "Built GDPR/CAN-SPAM compliant preference management",
       "Automated data sync + audience segmentation",
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Marketing Analytics Dashboard",
     tech: "SQL, Tableau/Power BI, SFMC Data Views",
-    img: "assets/img/mastertech.JPG",
+    img: "assets/img/ggu.png",
     bullets: [
       "Unified CRM + campaign data for KPI visibility",
       "Automated weekly refresh and stakeholder views"
@@ -26,7 +26,7 @@ const projects = [
   {
     title: "FoodMaster",
     tech: "WordPress, HTML, CSS, JavaScript, Forms, API",
-    img: "assets/img/mastertech.JPG",
+    img: "assets/img/food.jpg",
     bullets: [
       "Built a static food delivery website for local hotels in Pune",
       "Configured domain and hosting for deployment"
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Flight Booking Webapp",
     tech: "Java, Microservices, Hibernate, Spring Boot, HTML, JavaScript, CSS, XML, JSON",
-    img: "assets/img/mastertech.JPG",
+    img: "assets/img/flight.jpg",
     bullets: [
       "Designed online flight booking system using microservices",
       "Enabled ticket booking, flight search, and booking details"
@@ -46,7 +46,7 @@ const projects = [
   {
     title: "Location Web App",
     tech: "Java, Microservices, Hibernate, Spring Boot, HTML, JavaScript, CSS, XML, JSON",
-    img: "assets/img/mastertech.JPG",
+    img: "assets/img/location.jpg",
     bullets: [
       "Developed with Spring MVC architecture for data storage",
       "Exposed and consumed data using REST APIs"
