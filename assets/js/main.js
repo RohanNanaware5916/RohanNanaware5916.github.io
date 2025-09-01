@@ -10,7 +10,8 @@ const projects = [
       "Built GDPR/CAN-SPAM compliant preference management",
       "Automated data sync + audience segmentation",
       "Reduced manual opt-outs and improved deliverability"
-    ]
+    ],
+ //   repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Marketing Analytics Dashboard",
@@ -19,7 +20,8 @@ const projects = [
     bullets: [
       "Unified CRM + campaign data for KPI visibility",
       "Automated weekly refresh and stakeholder views"
-    ]
+    ],
+ //   repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "FoodMaster",
@@ -28,7 +30,8 @@ const projects = [
     bullets: [
       "Built a static food delivery website for local hotels in Pune",
       "Configured domain and hosting for deployment"
-    ]
+    ],
+//    repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Flight Booking Webapp",
@@ -37,7 +40,8 @@ const projects = [
     bullets: [
       "Designed online flight booking system using microservices",
       "Enabled ticket booking, flight search, and booking details"
-    ]
+    ],
+//    repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Location Web App",
@@ -46,7 +50,8 @@ const projects = [
     bullets: [
       "Developed with Spring MVC architecture for data storage",
       "Exposed and consumed data using REST APIs"
-    ]
+    ],
+//    repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Master TechSoft",
@@ -55,9 +60,11 @@ const projects = [
     bullets: [
       "Developed a WordPress site for a client using themes and templates",
       "Integrated custom forms and API features"
-    ]
+    ],
+//    repo: "https://github.com/yourname/yourrepo"
   }
 ];
+
 
 function renderProjects() {
   const wrapper = document.getElementById("projects-wrapper");
@@ -87,11 +94,11 @@ function renderProjects() {
         </div>
         <div id="project${i}" class="collapse show">
           <div class="card-body">
-            <div class="row align-items-stretch">
-              <div class="col-md-3 d-flex">
-                <img src="${p.img}" alt="${p.title}" class="project-img">
+            <div class="row align-items-start">
+              <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <img src="${p.img}" alt="${p.title}" class="img-fluid" style="max-width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
               </div>
-              <div class="col-md-9 d-flex flex-column justify-content-center">
+              <div class="col-md-9">
                 <ul>${(p.bullets||[]).map(b => `<li>${b}</li>`).join("")}</ul>
                 ${p.repo ? `<a href="${p.repo}" target="_blank" class="link-info">Repository / Demo</a>` : ""}
               </div>
@@ -103,4 +110,4 @@ function renderProjects() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", renderProjects);
+document.addEventListener("DOMContentLoaded", renderProjects); 
