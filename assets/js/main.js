@@ -1,4 +1,3 @@
-<script>
 // Projects render into #projects-wrapper.
 // Add your projects below. If empty, a friendly placeholder will show.
 
@@ -29,7 +28,8 @@ const projects = [
     tech: "WordPress, HTML, CSS, JavaScript, Forms, API",
     img: "assets/img/preference-center.png",
     bullets: [
-      "Food Master is a static website designed with HTML and CSS for a local food delivery system for hotels in Pune. Included domain and hosting configuration."
+      "Built a static food delivery website for local hotels in Pune",
+      "Configured domain and hosting for deployment"
     ],
     repo: "https://github.com/yourname/yourrepo"
   },
@@ -38,16 +38,18 @@ const projects = [
     tech: "Java, Microservices, Hibernate, Spring Boot, HTML, JavaScript, CSS, XML, JSON",
     img: "assets/img/dashboard.png",
     bullets: [
-      "Online flight booking platform using microservices and web services; users can search, book, and review flight and booking details."
+      "Designed online flight booking system using microservices",
+      "Enabled ticket booking, flight search, and booking details"
     ],
     repo: "https://github.com/yourname/yourrepo"
   },
   {
     title: "Location Web App",
-    tech: "Java, Spring MVC, Spring Boot, REST, HTML, JavaScript, CSS, XML, JSON",
+    tech: "Java, Microservices, Hibernate, Spring Boot, HTML, JavaScript, CSS, XML, JSON",
     img: "assets/img/preference-center.png",
     bullets: [
-      "Modular Spring MVC application to capture user data, persist to a database, and expose/consume it via REST APIs for other apps."
+      "Developed with Spring MVC architecture for data storage",
+      "Exposed and consumed data using REST APIs"
     ],
     repo: "https://github.com/yourname/yourrepo"
   },
@@ -56,11 +58,13 @@ const projects = [
     tech: "WordPress, HTML, CSS, JavaScript, Forms, API",
     img: "assets/img/dashboard.png",
     bullets: [
-      "Client WordPress site built with premium themes/templates and custom tweaks to meet content and lead-gen needs."
+      "Developed a WordPress site for a client using themes and templates",
+      "Integrated custom forms and API features"
     ],
     repo: "https://github.com/yourname/yourrepo"
   }
 ];
+
 
 function renderProjects() {
   const wrapper = document.getElementById("projects-wrapper");
@@ -77,62 +81,33 @@ function renderProjects() {
     return;
   }
 
-  const frag = document.createDocumentFragment();
-
   projects.forEach((p, i) => {
-    const safeTitle = p.title || "Untitled Project";
-    const projId = `project${i}`;
-
     const col = document.createElement("div");
     col.className = "col-12";
     col.innerHTML = `
       <div class="card mb-3">
-        <div class="card-header d-flex justify-content-between align-items-center">
+        <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#project${i}">
           <div>
-            <h5 class="mb-0">${safeTitle}</h5>
-            <small class="text-muted">Technologies used: ${p.tech || "—"}</small>
+            <h5 class="mb-0">${p.title}</h5>
+            <small class="text-muted">Technologies used: ${p.tech}</small>
           </div>
-          <button
-            class="btn btn-sm btn-outline-secondary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#${projId}"
-            aria-expanded="false"
-            aria-controls="${projId}"
-            title="Toggle details"
-          >
-            Details
-          </button>
         </div>
-
-        <div id="${projId}" class="collapse">
+        <div id="project${i}" class="collapse show">
           <div class="card-body">
-            <div class="row align-items-start g-3">
+            <div class="row align-items-start">
               <div class="col-md-3 d-flex justify-content-center align-items-center">
-                <img
-                  src="${p.img || "assets/img/placeholder.png"}"
-                  alt="${safeTitle}"
-                  class="img-fluid"
-                  loading="lazy"
-                  style="max-width:100%;height:auto;object-fit:cover;border-radius:8px;"
-                  onerror="this.src='assets/img/placeholder.png'; this.alt='Image not available';"
-                >
+                <img src="${p.img}" alt="${p.title}" class="img-fluid" style="max-width: 100%; height: auto; object-fit: cover; border-radius: 8px;">
               </div>
               <div class="col-md-9">
-                <ul>
-                  ${(Array.isArray(p.bullets) ? p.bullets : []).map(b => `<li>${b}</li>`).join("")}
-                </ul>
-                ${p.repo ? `<a href="${p.repo}" target="_blank" rel="noopener noreferrer" class="link-info">Repository / Demo</a>` : ""}
+                <ul>${(p.bullets||[]).map(b => `<li>${b}</li>`).join("")}</ul>
+                ${p.repo ? `<a href="${p.repo}" target="_blank" class="link-info">Repository / Demo</a>` : ""}
               </div>
             </div>
           </div>
         </div>
       </div>`;
-    frag.appendChild(col);
+    wrapper.appendChild(col);
   });
-
-  wrapper.appendChild(frag);
 }
 
-document.addEventListener("DOMContentLoaded", renderProjects);
-</script>
+document.addEventListener("DOMContentLoaded", renderProjects); 
